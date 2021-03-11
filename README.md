@@ -1,1 +1,2 @@
 # ExoPHP
+* Triangle de Pascal
