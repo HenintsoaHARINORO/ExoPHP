@@ -1,0 +1,12 @@
+{
+    "name": "max/exo-php",
+    "authors": [
+        {
+            "name": "legion112",
+            "email": "ageev.maks2014@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}
