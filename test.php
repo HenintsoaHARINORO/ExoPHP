@@ -9,13 +9,9 @@ $loader = new FilesystemLoader('templates');
 $twig = new Environment($loader, [
     'cache' => 'cache/twig',
 ]);
-$num= $_GET['vala'];
-if(isset($a)) {
-    $i = 0;
-    $res = 0;
-    for (; $i < 11; $i++) {
-        $res = $i * $a;
-        echo " $i * $a = $res <br>";
-    }
+
+if(isset($_POST['vala'])) {
+     echo $nums=$_POST['vala'];
+
 }
-echo $twig->render('hello.html.twig', ['res' => $res] );
+echo $twig->render('hello.html.twig', ['num' => $nums]);
