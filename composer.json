@@ -2,11 +2,13 @@
     "name": "max/exo-php",
     "authors": [
         {
-            "name": "legion112",
+            "name": "Legion112",
             "email": "ageev.maks2014@gmail.com"
         }
     ],
     "require": {
-        "twig/twig": "^3.0"
+        "php": "^7.4",
+        "twig/twig": "^3.0",
+        "ext-json": "*"
     }
 }

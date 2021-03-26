@@ -1,0 +1,36 @@
+{% extends "bootstrap.html.twig" %}
+{% block content %}
+    <h1 class="text-center">Messages</h1>
+    <div class="row mb-4">
+        <div class="column col-6">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Creat message</h5>
+                    <p class="card-text">Fill up the form and submit, the message will upper on the below</p>
+                </div>
+            </div>
+        </div>
+        <div class="column col-6">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your message</label>
+                    <input type="text" name="message" class="form-control" id="message" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Say hello!</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+        </div>
+    </div>
+    <h4>Users who left messages:</h4>
+    {% if messages %}
+        <div class="d-flex flex-wrap gap-2">
+            {% for message in messages %}
+                <div class="card" >
+                    <div class="card-body">
+                        <p class="card-text">{{ message }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}
