@@ -5,13 +5,12 @@
             <form action="test.php" method="post">
                 Nombre:<input type="text" name="vala"> <br><br>
                 <input type="submit" value="Calculer"><br><br>
-                {% for num in nums %}
-                    <div class="card" >
-                        <div class="card-body">
-                            <p class="card-text">{{ ress }}</p>
-                        </div>
-                    </div>
+
+
+                {% for ress in res %}
+                    {{ ress }}
                 {% endfor %}
+
 
             </form>
         </div>
