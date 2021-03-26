@@ -19,7 +19,7 @@
         <ul class="navbar-nav">
 
             <li class="nav-item active">
-                <a class="nav-link" href="multiplication.php">Multiplication</a>
+                <a class="nav-link" href="test.php">Multiplication</a>
             </li>
         </ul>
         <ul class="navbar-nav">
