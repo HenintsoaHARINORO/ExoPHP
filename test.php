@@ -11,11 +11,16 @@ if(isset($_POST['vala'])) {
     $nums=$_POST['vala'];
     $i = 0;
     $res = 0;
+    $output=[];
     for (; $i < 11; $i++) {
         $res = $i * $nums;
-        echo " $i * $nums = $res <br>";
+        $output[]=[
+            'a'=>$i,
+            'b'=>$nums,
+            'c'=>$res
+        ];
     }
 
 
 }
-echo $twig->render('hello.html.twig', ['ress' => $res]);
+echo $twig->render('hello.html.twig', ['output' => $output]);
