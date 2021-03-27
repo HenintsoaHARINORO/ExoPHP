@@ -50,7 +50,7 @@
     <div class="column1" style="margin-top: 10px;height: 50%;margin-left: 25%;width: 50%">
         <div class="card" style="background-color: #17a2b8">
             <?php
-            $a=$_POST["vala"];
+
 
             function factoriel($a)
             {
@@ -63,8 +63,7 @@
 
             ?>
             <?php
-            $a=$_POST["vala"];
-            $b=$_POST["valb"];
+
             function combinaison($a,$b)
             {
 
