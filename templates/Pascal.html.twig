@@ -1,0 +1,19 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <div class="column1" style="margin-top: 10px;height: 50%;margin-left: 25%;width: 50%">
+        <div class="card" style="background-color: #17a2b8">
+            <form action="Pascal_Triangle.php" method="post">
+                Nombre:<input type="text" name="number"> <br><br>
+                <input type="submit" value="Calculer"><br><br>
+
+
+                {% for line in output %}
+                    {{ line['b'] }}
+                {% endfor %}
+                <br>
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
