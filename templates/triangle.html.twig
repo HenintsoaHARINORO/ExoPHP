@@ -6,11 +6,11 @@
                 Nombre:<input type="text" name="number"> <br><br>
                 <input type="submit" value="Calculer"><br><br>
 
-           {% for i in j %}
-                {% for line in output %}
 
-                {% endfor %}
-           {% endfor %}
+                        {% for line in output %}
+                       {{ line['b'] }}
+                        {% endfor %}
+                    <br>
 
             </form>
         </div>

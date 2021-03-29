@@ -19,11 +19,9 @@ function factoriel($a)
 
 function combinaison($a,$b)
 {
-    $comb=0;
+
     if ($a >= $b)
         $comb = factoriel($a) / (factoriel($b) * factoriel($a - $b));
-    else
-        echo "Maths Error";
 
     return $comb;
 }
@@ -33,14 +31,15 @@ if(isset($_POST['number'])) {
         for ($j = 0; $j <= $c; $j++) {
             for ($i = 0; $i <= $c; $i++) {
                 if ($j >= $i) {
+                    $v=combinaison($j,$i);
                     $output[]=[
-                        'a'=>' ',
-                        'b'=>combinaison($i,$j),
-                        'c'=>' '
+                        'b'=>$v
                     ];
+
                 }
 
             }
+
         }
 
 }
