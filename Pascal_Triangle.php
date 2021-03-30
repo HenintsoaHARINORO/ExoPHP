@@ -4,8 +4,9 @@ require 'vendor/autoload.php';
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
-$twig = $container['twig'];
-
+// Initialize template engine https://twig.symfony.com/
+$loader = new FilesystemLoader('templates');
+$twig = new Environment($loader);
 function factoriel($a)
 {
     $a=0;
@@ -42,4 +43,4 @@ if(isset($_POST['number'])) {
     }
 
 }
-echo $twig->render('triangle.html.twig', ['output' => $output]);
+echo $twig->render('Pascal.html.twig', ['output' => $output]);
